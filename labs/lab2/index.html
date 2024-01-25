@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>L5V1 Example</title>
+	</head>
+	<body>
+		<script>
+            //part a)
+            //The area of a circle is given by pi*r^2. Pi in this case will be rounded  3.1415926.
+            const PI =  3.1415926;
+            //the scope of the PI const variable is global. It can be applied anywhere in our script.
+            //"let" and "const" were added to Javascript in 2016 ES6 (2015)
+            function areaOfCircle(radius){
+                let result = PI * radius^2;
+                console.log(result);
+                return(result);
+            }
+
+            //part b)
+			function add(a,b){
+				let result = a + b;
+				console.log(result);
+				return(result);
+			}
+			function subtract(a,b){
+				let result = a - b;
+				console.log(result);
+				return(result);
+			}
+			function multiply(a,b){
+				let result = a * b;
+				console.log(result);
+				return(result);
+			}
+			function divide(a,b){
+				let result = a / b;
+				console.log(result);
+				return(result);
+			}
+
+            //part c)
+            function areaOfRect(l, w){
+                let result = multiply(l,w);
+                console.log(result);
+				return(result);
+            }
+
+            //Calculations
+            areaOfCircle(6);
+            areaOfRect(20, 15);
+		</script>
+	</body>
+</html>
