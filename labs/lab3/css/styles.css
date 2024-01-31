@@ -1,0 +1,44 @@
+
+body {
+    background-color: #f0f0f0; 
+    font-family: Arial, sans-serif;
+}
+
+form {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 8px; 
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ff0066; 
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ff0066; 
+    border-radius: 4px; 
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    background-color: #ff0066;
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e5005a; 
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="genderNonBinary" name="gender" value="non-binary">
+        <label for="genderNonBinary">Non-Binary</label><br>
+
+        <input type="radio" id="genderFemale" name="gender" value="female">
+        <label for="genderFemale">Female</label><br>
+
+        <input type="radio" id="genderMale" name="gender" value="male">
+        <label for="genderMale">Male</label><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select a country</option>
+            <option value="usa">United States</option>
+            <option value="can">Canada</option>
+            <option value="au">Australia</option>
+
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
