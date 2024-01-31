@@ -7,71 +7,39 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <form>
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required><br>
-    
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required><br>
-    
-            <label>Gender:</label><br>
-            <input type="radio" id="genderNonBinary" name="gender" value="non-binary">
-            <label for="genderNonBinary">Non-Binary</label><br>
-    
-            <input type="radio" id="genderFemale" name="gender" value="female">
-            <label for="genderFemale">Female</label><br>
-    
-            <input type="radio" id="genderMale" name="gender" value="male">
-            <label for="genderMale">Male</label><br>
-    
-            <label for="country">Country:</label>
-            <select id="country" name="country" required>
-                <option value="" disabled selected>Select a country</option>
-                <option value="usa">United States</option>
-                <option value="can">Canada</option>
-                <option value="au">Australia</option>
-    
-            </select><br>
-    
-            <input type="submit" value="Submit">
-        </form>
-    
-        <div id="displayData"></div>
-    </div>
+    <form id="labForm" action='#' method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
 
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="genderNonBinary" name="gender" value="non-binary">
+        <label for="genderNonBinary">Non-Binary</label>
+
+        <input type="radio" id="genderFemale" name="gender" value="female">
+        <label for="genderFemale">Female</label>
+
+        <input type="radio" id="genderMale" name="gender" value="male">
+        <label for="genderMale">Male</label><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select a country</option>
+            <option value="usa">United States</option>
+            <option value="can">Canada</option>
+            <option value="au">Australia</option>
+
+        </select><br>
+
+        <input id="submit" type="button" value="Submit" onclick="displayFormData()">
+    </form>
+
+    <div id="displayData"></div>
     <script>
-        //Object to store data from form
-        var formData = {
-            firstName: "",
-            lastName: "",
-            gender: "",
-            country: ""
-        };
-
-        function updateFormData() {
-            formData.firstName = document.getElementById("firstName").value;
-            formData.lastName = document.getElementById("lastName").value;
-            formData.gender = document.querySelector('input[name="gender"]:checked').value;
-            formData.country = document.getElementById("country").value;
-        }
-
-        
-        function displayFormData() {
-            var displayDataDiv = document.getElementById("displayData");
-            displayDataDiv.innerHTML = "<h2>Submitted Data:</h2>" +
-                "<p><strong>First Name:</strong> " + formData.firstName + "</p>" +
-                "<p><strong>Last Name:</strong> " + formData.lastName + "</p>" +
-                "<p><strong>Gender:</strong> " + formData.gender + "</p>" +
-                "<p><strong>Country:</strong> " + formData.country + "</p>";
-        }
-
-        function submitForm(event) {
-            //Prevents Default Submission of the Form
-            event.preventDefault();
-            updateFormData();
-            displayFormData();
-        }
+        src="script.js"
     </script>
+
 </body>
 </html>
