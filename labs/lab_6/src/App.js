@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Lab 6 CSCI3172
         </a>
       </header>
     </div>
