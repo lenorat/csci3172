@@ -4,7 +4,7 @@
 * *Last Modification Date*: 15 Feb 2024
 * *Lab URL*: <https://web.cs.dal.ca/tairova/csci3172/lab5/>
 * *Git URL*: <https://git.cs.dal.ca/tairova/csci-3172.git>
-
+* * Netlify URL*: https://lab6tairova.netlify.app/
 
 ## Author
 * [Lenora Tairova](ln242427@dal.ca)
